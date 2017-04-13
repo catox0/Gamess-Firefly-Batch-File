@@ -46,6 +46,7 @@ goto check
 
 REM    --- run Firefly now ---
 :run
+IF EXIST %1.out (del %1.out)
 echo running 
 echo %1
 echo running> %PCGamessPath%PCGqueue.txt
